@@ -1,0 +1,15 @@
+{  
+  "dependencies": {},
+  "description": "Ecgine",
+  "devDependencies": {},
+  "main": "index.js",
+  "name": "ecgine",
+  "optionalDependencies": {},  
+  "typings": "ecgine.d.ts",
+  "version": "1.0.0",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "ecgine.d.ts"
+  ]
+}

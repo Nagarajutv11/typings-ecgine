@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-      "module": "commonjs"
-  },
-  "files": [
-    "ecgine.d.ts"
-  ]
-}
