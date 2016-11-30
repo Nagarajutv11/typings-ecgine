@@ -21,22 +21,20 @@ declare namespace Ecgine {
     export type FormInput = E.FormInput;
     export type DashboardInput = E.DashboardInput;
     export type ListViewInput = E.ListViewInput;
+    export type ReportInput = E.ReportInput;
     export type CalendarListViewInput = E.CalendarListViewInput;
     export type AbstractListViewInput = E.AbstractListViewInput;
     export type Portlet = E.Portlet;
     export type ListPortletInput = E.ListPortletInput;
     export type PortletInput = E.PortletInput;
     export type PortletLayout = E.PortletLayout;
-
-    //Form
-    export type Form = E.Form;
-    export type FormAction = E.FormAction;
-    export type PropertyFieldGroup = E.PropertyFieldGroup;
-    export type PropertyField = E.PropertyField;
-    export type ModelField = E.ModelField;
-    export type ModelFieldGroup = E.ModelFieldGroup;
-    export type PropertySubTab = E.PropertySubTab;
-    export type ModelSubTab = E.ModelSubTab;
+    export type AppLifeCycleHandler = E.AppLifeCycleHandler;
+    export type AppLifeCycleContext = E.AppLifeCycleContext;
+    export type Command = E.Command;
+    export type RelatedList = E.RelatedList;
+    export type ChartPortletInput = E.ChartPortletInput;
+    export type ReportPortletInput = E.ReportPortletInput;
+    export type QuickLinkInput = E.QuickLinkInput;
 }
 
 export = Ecgine;
