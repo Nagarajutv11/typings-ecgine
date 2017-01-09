@@ -9,10 +9,6 @@ export interface Ecgine {
     //Need to call when ecgine obj is ready
     ready(onload: Callback): void;
 
-    addCommand(id: string, command: () => IViewInput): void;
-
-    getCommand(id: string): () => IViewInput;
-
     addExtPoint(appName: string, points: Supplier<{ [name: string]: any[]; }>): void;
 
     //Return all values of given extPoint
