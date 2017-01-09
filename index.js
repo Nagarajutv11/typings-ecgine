@@ -1,0 +1,1 @@
+module.exports = {$e:window.ecgine};
