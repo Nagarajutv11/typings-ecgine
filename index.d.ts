@@ -1,6 +1,6 @@
 import * as E from "./ecgine";
-
-declare namespace Ecgine {
+import {Vue,Component, Prop, Lifecycle} from 'av-ts'
+//declare namespace Ecgine {
     export var $e: E.Ecgine;
     export type Callback = E.Callback;
     export type Supplier<T> = E.Supplier<T>;
@@ -40,6 +40,9 @@ declare namespace Ecgine {
     export type FormHandler = E.FormHandler;
     export type LinkColumn = E.LinkColumn;
     
-}
-
-export = Ecgine;
+//}
+export {Vue}
+export {Component}
+export {Prop}
+export {Lifecycle}
+//export = Ecgine;

@@ -96,7 +96,7 @@ export declare interface DatabaseObject {
 }
 export declare interface EntityRegistry {
     entity(fullName: string): Entity;
-    enumValues(fullName: string): string[]
+    enumValues(fullName: string): { name: string, displayName: string }[]
 }
 
 export declare interface Entity {
