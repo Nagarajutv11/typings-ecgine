@@ -25,6 +25,8 @@ export interface Ecgine {
     singleton(fullName: string): any;
 
     scriptDone(scriptName: string): void;
+
+    addFormHandler(name: string, handler: FormHandler): void;
 }
 
 export declare interface Command {
@@ -94,6 +96,7 @@ export declare interface DatabaseObject {
 }
 export declare interface EntityRegistry {
     entity(fullName: string): Entity;
+    enumValues(fullName: string): string[]
 }
 
 export declare interface Entity {
@@ -222,6 +225,7 @@ export declare interface AppLifeCycleHandler {
 
 export declare interface AppLifeCycleContext {
     proceed(): void
+    openView(input: IViewInput): void
 }
 
 export declare interface RelatedList {
@@ -230,4 +234,38 @@ export declare interface RelatedList {
     savedSearch: string
     showHeader?: boolean
     mapings?: { [key: string]: string }
+}
+
+export declare interface ValidationResult {
+    errors: Message[]
+    warnings: Message[]
+    infos: Message[]
+}
+
+export declare interface Message {
+    message: string;
+    statusCode: string;
+    field: string;
+}
+
+export declare interface FormHandlerContext {
+    instance(): DatabaseObject;
+
+    setStatus(status: string): void;
+
+    isEdit(): boolean;
+}
+export declare interface FormHandler {
+    onValidate(vr: ValidationResult, context: FormHandlerContext): boolean;
+
+    canCreateAction(actionName: string, context: FormHandlerContext): boolean;
+
+    onInit(context: FormHandlerContext): void;
+}
+
+export declare interface LinkColumn {
+    name: string,
+    list: string,
+    searchColumn?:string,
+    action: (filterValues: { [key: string]: any }, row: DatabaseObject) => void
 }

@@ -35,6 +35,11 @@ declare namespace Ecgine {
     export type ChartPortletInput = E.ChartPortletInput;
     export type ReportPortletInput = E.ReportPortletInput;
     export type QuickLinkInput = E.QuickLinkInput;
+    export type ValidationResult = E.ValidationResult;
+    export type FormHandlerContext = E.FormHandlerContext;
+    export type FormHandler = E.FormHandler;
+    export type LinkColumn = E.LinkColumn;
+    
 }
 
 export = Ecgine;
